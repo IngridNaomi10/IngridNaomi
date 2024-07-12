@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root{
+    --black: #000000;
+    --white: #fff;
+    --red:#ff0000;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+*{
+    margin: 0; padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+/* Barra de scroll */
+html{
+    font-size: 65.5%;   
+    overflow-x: hidden;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 5rem;
+}
+
+body{
+  width: 100%;
+  overflow: hidden;
+}
+/* Menú */
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 10%;
+    z-index: 999;
+}
+
+.header .logoContent .logoName {
+    color: var(--red);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-right: 5rem;
+    color: var(--red);
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border-bottom: .1rem solid var(--red);
+    padding-bottom: .4rem;
+}
+.header .icon i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--red);
+    cursor: pointer;
+}
+
+#menu-bar{
+    display: none;
+}
+
+
+/* 1er Sección fondo */
+
+
+.home {
+  min-height: 110vh;
+  align-items: center;
+  background: url(imagen/FONDO\ PRINCIPAL.jpg) no-repeat;
+  background-size:cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+
+
+/* 2do sección */
+
+
+.product{
+  padding: 0px 60px;
+  background-color: #000000;
+}
+.heading{
+  text-align: center;
+  font-size: 2.2rem;
+  padding-top: 30px;
+  color: var(--white);
+  font-family: "Dancing Script", cursive;
+}
+
+.heading h2{
+  color: #ff0000;
+}
+.padres{
+  font-size: 2.5rem;
+  padding-top: 35px;
+  color: #ff0000;
+}
+
+.nombres{
+  padding-top: 40px;
+  font-size: 2.5rem;
+}
+
+.imga img{
+  padding-top: 10px;
+  width: 30%;
+}
+
+.inv{
+  padding-top: 5px;
+  color: rgba(255, 0, 0, 0.519);
+  font-size: 2rem;
+}
+
+.xv{
+  padding-top: 5px;
+  font-size: 38px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.fecha{
+  font-size: 38px;
+}
+
+
+/* 3a seccion*/
+.newsletter{
+  background: url(imagen/FONDO_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.seccion2{
+  font-size: 60px;
+  color: #ff0000;
+  padding-bottom: 100px;
+  font-family: "Dancing Script", cursive;
+}
+
+.contenedor{
+  margin:auto;
+  padding: 77px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.card{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-carduno{
+  width: 35%;
+  background-color: #fff;
+  overflow: hidden;
+  height:700px;
+  border-radius: 20px;
+}
+
+
+.content-carduno img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.content-carddos{
+  width: 35%;
+  background-color: #fff;
+  overflow: hidden;
+  height:700px;
+  border-radius: 20px;
+}
+
+
+.content-carddos img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.texto .igles{
+  width: 20%;
+}
+
+.texto .cake{
+  width: 17%;
+}
+
+
+.texto h4{
+  color: #ff0000;
+  font-size: 2rem;
+  padding-bottom: 15px;
+  font-family: "Dancing Script", cursive;
+}
+
+.texto .hora{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+}
+
+.texto .lugar{
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  padding-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+.texto .dire{
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  padding-bottom: 40px;
+  font-family: "Dancing Script", cursive;
+}
+
+.Ubicación{
+  display: inline-block;
+  border-radius: 5rem;
+  background:#000000;
+  color:#fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  padding:.7rem 3rem;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  font-size: 1.7rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.Ubicación::before,
+.Ubicación::after{
+    content: '';
+    position: absolute;
+    top:0;
+    height: 100%;
+    width:0%;
+    background:#ff0000;
+    z-index: -1;
+    transition: .3s linear;
+}
+
+.Ubicación::before{
+    left:0;
+}
+
+.Ubicación::after{
+    right:0;
+}
+
+.Ubicación:hover::before,
+.Ubicación:hover::after{
+    width:100%;
+}
+
+
+
+
+/* 3er parte en la 3er sección */
+
+/* 4 parte ----- Cuenta Regresiva ----- */
+
+.cuadro{
+  background: url(imagen/FONDO_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.crono .titulo{
+  font-family: "Dancing Script", cursive;
+  color: #ff0000;
+  font-size: 50px;
+  padding: 80px 630px;
+}
+
+#cuenta {
+	display: flex;
+	justify-content: center;
+  margin-top: 30px;
+}
+
+.simply-section {
+	width: 180px;
+	height: 180px;
+	margin: 0 30px;
+	border-radius: 100px;
+  border-style: solid;
+  border-color: #ffbd09;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  margin-top: 50px;
+}
+
+.simply-amount {
+  color: #ff0000;
+	display: block;
+	font-size: 50px;
+	font-weight: 300;
+  padding: 20px;
+}
+
+.simply-word {
+  color: white;
+	font-weight: 300;
+	font-size: 18px;
+  padding: 25px;
+  font-family: "Dancing Script", cursive;
+}
+
+
+.gift img{
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0% 45%;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.regalostex h1{
+  color: var(--red);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 0px 80px;
+  font-family: "Dancing Script", cursive;
+}
+
+.regalostex h2{
+  color: var(--red);
+  font-size: 2rem;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Dancing Script", cursive;
+}
+
+
+.regalostex h3{
+  color: var(--red);
+  font-size: 2rem;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Dancing Script", cursive;
+}
+/* 5a sección */
+
+#whats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.asis{
+  max-width: 58rem;
+  margin-top: 10px;
+}
+
+
+.contact-me h1{
+	color: #ff0000;
+	font-size: 25px;
+	margin-bottom: 5px;
+  font-family: "Dancing Script", cursive;
+  padding: 0px 30px;
+  margin-top: 40px;
+}
+
+.contact-me h2{
+	color: white;
+	font-size: 65px;
+	font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  margin-top: 40px;
+  padding: 0px 160px;
+}
+
+.contact-me h3{
+	color: #ff0000;
+	font-size: 25px;
+  font-family: "Dancing Script", cursive;
+	margin-bottom: 45px;
+  margin-top: 30px;
+  padding: 0px 70px;
+}
+
+
+.contact-me .button-two{
+	background-color:#ff0000;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	border-radius: 30px;
+	transition: .4s; 
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0% 28%;
+}
+.contact-me .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #ff0000;
+	cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+	color:#ff0000;
+	font-size: 15px; 
+	background: white;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* MODO RESPONSIVE */
+
+/* PRIMERA PARTE MENU E IMAGEN DE FONDO*/
+
+/* Estilos para dispositivos con pantalla menor a 600px de ancho */
+
+
+@media (max-width:991px){
+  html{
+      font-size: 55%;
+  }
+  .header{
+      padding: 1.3rem 3rem;
+  }
+  .home .homeContent{
+      margin-left: 0;
+      width: 80%;
+  }
+
+  .inv{
+    font-size: 4rem;
+  }
+
+  .content-carduno{
+    height:480px;
+  }
+
+  .content-carddos{
+    height:480px;
+  }
+
+
+  .crono .titulo{
+  padding: 20px 340px;
+}
+
+.asis{
+  max-width: 69rem;
+}
+
+
+}
+
+@media (max-width:768px) {
+  #menu-bar{
+      display: inline-block;
+      cursor: pointer;
+  }
+  .header .navbar{
+      position: fixed;
+      top: 45px;
+      bottom: 0;
+      background-color:#000000;
+      width: 100%;
+      right: 0;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      clip-path: circle(0 at center);
+      transition: clip-path 1s ease-in-out;
+  }
+  .header .navbar.active{
+      clip-path: circle(100% at center);
+  }
+  .header .navbar a{
+      display: block;
+      font-size: 2rem;
+      color: #ff0000;
+      margin: 1.5rem;
+  }
+
+  .crono .titulo{
+    padding: 20px 260px;
+  }
+  
+}
+
+@media (max-width:600px){
+  body{
+    background-color: #000;
+  }
+  .home {
+    min-height: 80vh;
+    align-items: center;
+    background: url(imagen/Mobile\ 1.jpg) no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+  
+  .newsletter{
+    background: url(imagen/mobresp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  
+  }
+
+  .content-card{
+    height:480px;
+  }
+
+  .texto .igles{
+    width: 30%;
+  }
+  
+  .texto .cake{
+    width: 28%;
+  }
+  
+  
+  .texto h4{
+    font-size: 2rem;
+  }
+  
+  .texto .hora{
+      font-size: 20px;
+  }
+  
+  .texto .lugar{
+    font-size: 20px;
+  }
+  
+  .texto .dire{
+    font-size: 12px;
+  }
+
+  .cuadro{
+    background: url(imagen/mobresp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+ 
+  }
+
+  .crono .titulo{
+    padding: 20px 180px;
+  }
+
+  
+  .simply-section {
+    width: 120px;
+    height: 120px;
+    margin: 0 10px;
+  }
+  
+  .simply-amount {
+    font-size: 40px;
+    padding: 10px 28px;
+  }
+  
+  .simply-word {
+    font-size: 12px;
+    padding: 35px;
+  }
+  
+  
+  .asis{
+    max-width: 75rem;
+  }
+  
+  
+  .contact-me h1{
+    font-size: 20px;
+    padding: 0px 80px;
+  }
+  
+  .contact-me h2{
+    font-size: 55px;
+    padding: 0px 160px;
+  }
+  
+  .contact-me h3{
+    font-size: 20px;
+    padding: 0px 100px;
+  }
+  
+  
+  .contact-me .button-two{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0% 28%;
+  }
+  
+}
+
+@media(max-width:433px){
+ 
+  html{
+      font-size: 40%;
+  }
+
+  .home {
+    min-height: 70vh;
+    align-items: center;
+    background: url(imagen/Mobile\ 1.jpg) no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+
+  /* Cronometro */
+  .crono .titulo{
+    padding: 20px 190px;
+    font-size: 40px;
+  }
+
+
+  /* Seccion de regalos*/
+
+  .regalostex{
+    margin-top: 5%;
+  }
+
+  .regalostex .gift{
+    width:15%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0% 45%;
+  }
+
+  .regalostex h1{
+    color: #ff0000;
+    font-size: 15px;
+    font-family: "Dancing Script", cursive;
+    margin-top: 20px;
+    padding: 0 80px;
+  }
+
+  
+  .regalostex h2{
+    color: #ff0000;
+    font-size: 15px;
+    font-family: "Dancing Script", cursive;
+    margin-top: 20px;
+    padding: 0 80px;
+  }
+
+  /* Sección whats */
+  
+  .asis{
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0% 15%;
+  }
+  
+  
+  .contact-me h1{
+    font-size: 18px;
+    padding: 0px 80px;
+  }
+  
+  .contact-me h2{
+    font-size: 55px;
+    padding: 0px 160px;
+  }
+  
+  .contact-me h3{
+    font-size: 20px;
+    padding: 0px 100px;
+  }
+  
+  
+  .contact-me .button-two{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0% 28%;
+  }
+}
+
+
+@media screen and (max-width: 416px){
+  body{
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  .home {
+    min-height: 73vh;
+    align-items: center;
+    background: url(imagen/Móvil_430.jpg) no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+  
+  .heading h2{
+    font-size: 4rem;
+  }
+  
+  .padres{
+    font-size: 4rem;
+  }
+
+  .nombres{
+    font-size: 3.1rem;
+  }
+
+  .imga img{
+    width: 100%;  
+  }
+
+  .newsletter{
+    background: url(imagen/mobresp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .seccion2{
+    font-size: 6rem;
+  }
+   
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .content-carduno{
+    height: 530px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .texto .igles{
+    width: 30%;
+  }
+  
+  .texto h4{
+    font-size: 2.6rem;
+  }
+  
+  .texto .hora{
+      font-size: 16px;
+  }
+  
+  .texto .lugar{
+    font-size: 18px;
+  }
+  
+  .texto .dire{
+    font-size: 12px;
+  }
+
+  .Ubicación{
+    font-size: 16px;
+  }
+     
+  .content-carddos{
+    height: 530px;
+    width: 300px;
+  }
+
+  .texto .cake{
+    width: 26%;;
+  }
+  
+  .texto h4{
+    font-size: 2.2rem;
+  }
+  
+  .texto .hora{
+      font-size: 12px;
+  }
+  
+  .texto .lugar{
+    font-size: 12px;
+  }
+  
+  .texto .dire{
+    font-size: 13px;
+  }
+
+
+  .cuadro{
+    background: url(imagen/mobresp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .crono .titulo{
+    padding: 20px 120px;
+  }
+
+  
+  .simply-section {
+    width: 85px;
+    height: 85px;
+    margin: 0 5px;
+  }
+  
+  .simply-amount {
+    font-size: 30px;
+    padding: 10px 38px;
+  }
+  
+  .simply-word {
+    font-size: 10px;
+    padding: 0px 39px;
+  }
+  
+  .gift img{
+    width: 150%;
+    margin: 0 -5px;
+    margin-top: 30px;
+  }
+
+  .regalostex h1{
+    font-size: 3rem;
+    padding: 0px 35px;
+  }
+
+  .regalostex h2{
+    font-size: 3rem;
+    padding: 0px 35px;
+  }
+
+  .regalostex h3{
+    font-size: 3rem;
+    padding: 0px 35px;
+  }
+  
+  
+  
+  .contact-me h1{
+    font-size: 2.8rem;
+    padding: 0px 95px;
+  }
+  
+  .contact-me h2{
+    font-size: 55px;
+    padding: 0px 140px;
+  }
+  
+  .contact-me h3{
+    font-size: 2.8rem;
+    padding: 0px 100px;
+  }
+  
+  
+  .contact-me .button-two{
+  width: 40%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0% 30%;
+  }
+
+  .asis{
+    max-width: 56rem;
+  }
+}
+
+@media screen and (max-width: 412px){
+  
+  .cuadro{
+    background: url(imagen/mobresp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .crono .titulo{
+    padding: 20px 110px;
+  }
+
+  
+  .simply-section {
+    width: 90px;
+    height: 90px;
+    margin: 0 5px;
+  }
+  
+  .simply-amount {
+    font-size: 30px;
+    padding: 10px 38px;
+  }
+  
+  .simply-word {
+    font-size: 10px;
+    padding: 0px 39px;
+  }
+  
+  .contact-me h1{
+    font-size: 2.2rem;
+    margin: 45px 40px;
+  }
+
+  .contact-me h2{
+    font-size: 4.2rem;
+    margin: 15px 80px;
+  }
+
+  .contact-me h3{
+    font-size: 2.2rem;
+    margin: 15px 40px;
+  }
+
+  .contact-me .button-two{
+    width: 30vh;
+  }
+
+  .asis{
+    max-width: 25rem;
+    margin: 0px 190px;
+  }
+}
+
+@media (max-width:390px){
+  body{
+    width: 100%;
+    background-color: #000;
+  }
+
+  .home {
+    min-height: 63vh;
+    align-items: center;
+    background: url(imagen/Móvil_430.jpg) no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+  
+
+  .newsletter{
+    background: url(imagen/mobresp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .content-carduno{
+    width: 250px;
+    padding:25px;
+    height:450px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+ 
+  .Ubicación{
+    font-size: 12px;
+  }
+     
+  .content-carddos{
+    width: 250px;
+    padding: 25px;
+    height:450px;
+    margin-bottom: 10px;
+  }
+
+  .texto .igles{
+    width: 45%;
+  }
+  
+  .texto .cake{
+    width: 38%;
+  }
+  
+  
+  .texto h4{
+    font-size: 1.5rem;
+  }
+  
+  .texto .hora{
+      font-size: 14px;
+  }
+  
+  .texto .lugar{
+    font-size: 12px;
+  }
+  
+  .texto .dire{
+    font-size: 12px;
+  }
+
+
+  .cuadro{
+    background: url(imagen/mobresp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .crono .titulo{
+    margin: 0 -85px;
+    padding: 20px 190px;
+    font-size: 40px;
+  }
+
+   #cuenta{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 10% 28%;
+  }
+
+  .simply-section {
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px;
+  }
+  
+  .simply-amount {
+    font-size: 40px;
+    padding: 10px 28px;
+  }
+  
+  .simply-word {
+    font-size: 12px;
+    padding: 35px;
+  }
+  
+    /* Regalos*/
+
+    .regalostex{
+      margin-top: 10%;
+    }
+  
+    .regalostex .gift{
+      width:15%; 
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin: 0% 45%;
+    }
+    
+    
+    .regalostex h1{
+      color: #ff0000;
+      font-size: 22px;
+      font-family: "Dancing Script", cursive;
+      margin-top: 30px;
+      padding: 0 50px;
+    }
+  
+    
+    .regalostex h2{
+      color: #ff0000;
+      font-size: 22px;
+      font-family: "Dancing Script", cursive;
+      margin-top: 20px;
+      padding: 0 50px;
+    }
+
+    .regalostex h3{
+      color: #ff0000;
+      font-size: 24px;
+      font-family: "Dancing Script", cursive;
+      margin: 20px 0px;
+    }
+
+ 
+  /* Sección whats */
+  
+  
+  .contact-me h1{
+    font-size: 17px;
+    padding: 0px 210px;
+   
+  }
+  
+  .contact-me h2{
+    font-size: 32px;
+    padding: 0px 260px;
+  }
+  
+  .contact-me h3{
+    font-size: 17px;
+    padding: 0px 210px;
+  }
+
+  .contact-me .button-two{
+    width: 25vh;
+    font-size: 2.3rem;
+    margin-inline: 340px;
+    margin-bottom: 12px;
+  }
+  .cont .asis{
+    max-width: 30rem;
+    margin-inline: 300px;
+  }
+}
+
